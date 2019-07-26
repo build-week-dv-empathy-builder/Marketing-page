@@ -76,8 +76,22 @@
          
     </section>
 
-    <section class="contact">
-      <img src="./img/background-bottom.svg" alt="background-image">
+    <!-- ////bottom image -->
+    <img class="bottom-image" src="./img/background-bottom.svg" alt="background-image">
+
+    <!-- //contact -->
+    <section class="contact">  
+      <h1>Questions or comments?</h1>
+      <form action="/action_page.php" method="POST">
+        <div class="fieldset" class="name-email">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+        </div>
+        
+        <textarea name="message" rows="10" cols="30" placeholder="Message">
+        </textarea>
+        <button type="submit" onclick="alert('Hello World!')">Send Message</button>
+      </form>
     </section>
   </main>
 
