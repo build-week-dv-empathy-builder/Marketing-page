@@ -158,39 +158,52 @@
           align-items: center;
           width: 75%;
           margin: 0 auto;
+          ::placeholder {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: .25em;
+          }
           .fieldset{
             width: 100%;
             display: flex;
             justify-content: space-between;
             input{
-              width: calc(50% - 1.66rem);
+              width: calc(50% - 1.666rem);
               background: rgba(83, 195, 197, 0.75);
-              color: #fff;
-              line-height: 1.5rem;
               border: 1.5px solid #fff;
+              line-height: 1.5rem;
               padding: .5rem;
+              border-radius: 4px;
             }
           }
           textarea{
-            width: 99.5%;
+            border-radius: 4px;
+            width: calc(100% - 1.125rem);
             background: rgba(83, 195, 197, 0.75);
             color: #fff;
             line-height: 1.5rem;
             border: 1.5px solid #fff;
             margin-top: 1rem;
             height: 40vh;
+            padding: .5rem;
           }
           button{
             margin-top: 1rem;
             width: 47%;
-            background: rgba(83, 195, 197, 0.75);
+            background: rgba(83, 195, 197, 0.65);
             color: #fff;
             line-height: 1.5rem;
             border: 1.5px solid #fff;
+            border-radius: 4px;
             padding: .5rem;
+            font-family: Arial,
+            Helvetica,
+            sans-serif;
+            letter-spacing: .25em;
+            transition: all .35s ease-in-out;
             &:hover{
               background: #fff;
-              color: rgba(83, 195, 197, 0.75);
+              color: rgb(60, 150, 151);
             }
           }
           
