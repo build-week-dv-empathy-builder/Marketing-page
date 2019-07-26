@@ -169,7 +169,6 @@ main header img {
   width: 100%;
 }
 main .profiles {
-  height: 150vh;
   padding: 1rem;
 }
 main .profiles .row {
@@ -177,11 +176,16 @@ main .profiles .row {
   justify-content: space-evenly;
   align-items: center;
 }
+@media (max-width: 500px) {
+  main .profiles .row {
+    flex-direction: column;
+  }
+}
 main .profiles .row .image-container {
   position: relative;
   display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: calc(25vw);
+  height: calc(25vw);
   margin: 30px;
   background: #fff;
   border-radius: 5px;
@@ -190,6 +194,12 @@ main .profiles .row .image-container {
   cursor: pointer;
   overflow: hidden;
   border-radius: 50%;
+}
+@media (max-width: 500px) {
+  main .profiles .row .image-container {
+    width: calc(50vw);
+    height: calc(50vw);
+  }
 }
 main .profiles .row .image-container .over-flower {
   position: absolute;
@@ -238,7 +248,6 @@ main .profiles .row .image-container .over-flower .overlay p {
 }
 main .contact {
   width: 100%;
-  margin-top: 10rem;
 }
 main .contact img {
   width: 100%;
