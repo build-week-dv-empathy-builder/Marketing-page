@@ -174,29 +174,17 @@ main {
 }
 .content {
   height: 1000px;
-}
-.content .vl {
-  border-left: 2px solid #53C4C5;
-  height: 230px;
-  margin-left: 49.9%;
-  position: absolute;
-  top: 581px;
+  display: flex;
+  flex-direction: column;
 }
 .content .logo {
-  position: absolute;
-  top: 811px;
-  left: 26%;
+  width: 50%;
 }
-.content .logo .hr {
-  border-top: 2px solid #53C4C5;
-  width: 622px;
+.content img {
+  width: 30%;
 }
-.content .vl-middle {
-  border-left: 2px solid #53C4C5;
-  height: 430px;
-  margin-left: 49.9%;
-  position: absolute;
-  top: 1092px;
+.content .description1 {
+  display: flex;
 }
 .bottom {
   width: 100%;

@@ -23,34 +23,40 @@
 
 .content {
     height: 1000px;
-
-    .vl {
-        border-left: 2px solid #53C4C5;
-        height: 230px;
-        margin-left: 49.9%;
-        position: absolute;
-        top: 581px;
-    }
+    display: flex;
+    flex-direction: column;
+    
     .logo {
-        position: absolute;
-        top: 811px;
-        left: 26%;
-        
-        .hr {
-            border-top: 2px solid #53C4C5;
-            width: 622px;
-        }
+        width: 50%;
+    }
+    img {
+        width: 30%;
     }
 
-    .vl-middle {
-        border-left: 2px solid #53C4C5;
-        height: 430px;
-        margin-left: 49.9%;
-        position: absolute;
-        top: 1092px;
+    .description1 {
+        display: flex;
     }
 }
+// .content::before {
+//         content: "";
+//         height: 100%;
+//         left: 50%;
+//         position: absolute;
+//         top: 0px;
+//         width: 1px;
+//         z-index: -1;
+//         background: rgba(224, 224, 224, 0.75);
+//     }
 
+//     .logo::before {
+//         content: "";
+//         display: block;
+//         height: 1px;
+//         left: 0px;
+//         position: absolute;
+//         width: 100%;
+//         background: rgba(224, 224, 224, 0.75);
+//     }
 
 .bottom {
     // border: 1px solid red;
