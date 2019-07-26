@@ -149,39 +149,43 @@ table {
 }
 main {
   width: 100%;
-  max-width: 800px;
   margin: 0 auto;
 }
-main header {
+.about {
   width: 100%;
 }
-main header h1 {
+.about h1 {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.5rem;
   color: #fff;
   position: absolute;
   width: 100%;
-  max-width: 800px;
   top: 14vw;
 }
-main header img {
+@media (max-width: 500px) {
+  .about h1 {
+    top: 7vh;
+    font-size: 2rem;
+  }
+}
+.about img {
   width: 100%;
 }
-main .profiles {
+.profiles {
   padding: 1rem;
 }
-main .profiles .row {
+.profiles .row {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width: 500px) {
-  main .profiles .row {
+  .profiles .row {
     flex-direction: column;
   }
 }
-main .profiles .row .image-container {
+.profiles .row .image-container {
   position: relative;
   display: inline-block;
   width: calc(25vw);
@@ -196,12 +200,12 @@ main .profiles .row .image-container {
   border-radius: 50%;
 }
 @media (max-width: 500px) {
-  main .profiles .row .image-container {
+  .profiles .row .image-container {
     width: calc(50vw);
     height: calc(50vw);
   }
 }
-main .profiles .row .image-container .over-flower {
+.profiles .row .image-container .over-flower {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -212,12 +216,27 @@ main .profiles .row .image-container .over-flower {
   background-size: cover;
   overflow: hidden;
 }
-main .profiles .row .image-container .over-flower .bg-image {
-  background: url(../img/Jesse-circle.png) no-repeat center;
-  transition: all 0.3s ease;
+.profiles .row .image-container .over-flower #robert {
+  background: url(../img/Robert-circle.png) no-repeat center;
   background-size: cover;
 }
-main .profiles .row .image-container .over-flower .bot {
+.profiles .row .image-container .over-flower #jesse {
+  background: url(../img/Jesse-circle.png) no-repeat center;
+  background-size: cover;
+}
+.profiles .row .image-container .over-flower #derrick {
+  background: url(../img/Derrick-circle.png) no-repeat center;
+  background-size: cover;
+}
+.profiles .row .image-container .over-flower #travis {
+  background: url(../img/Travis-circle.png) no-repeat center;
+  background-size: cover;
+}
+.profiles .row .image-container .over-flower #danielle {
+  background: url(../img/danielle-circle.png) no-repeat center;
+  background-size: cover;
+}
+.profiles .row .image-container .over-flower .bot {
   position: absolute;
   max-width: 100%;
   top: 0;
@@ -228,16 +247,16 @@ main .profiles .row .image-container .over-flower .bot {
   height: 100%;
   background-size: cover;
 }
-main .profiles .row .image-container .over-flower .overlay:hover {
+.profiles .row .image-container .over-flower .overlay:hover {
   background-color: rgba(83, 195, 197, 0.75);
   animation: BUTTON-ANIMATION 4s ease-in;
 }
-main .profiles .row .image-container .over-flower .overlay:hover p {
+.profiles .row .image-container .over-flower .overlay:hover p {
   display: block;
   animation: NAME-ANIMATION 2s ease-in;
   margin-top: 45%;
 }
-main .profiles .row .image-container .over-flower .overlay p {
+.profiles .row .image-container .over-flower .overlay p {
   display: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3rem;
@@ -246,9 +265,9 @@ main .profiles .row .image-container .over-flower .overlay p {
   z-index: 100;
   color: #fff;
 }
-main .contact {
+.contact {
   width: 100%;
 }
-main .contact img {
+.contact img {
   width: 100%;
 }

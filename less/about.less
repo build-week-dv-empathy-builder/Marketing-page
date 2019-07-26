@@ -1,11 +1,6 @@
 
 
-main{
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-
-    header{
+    .about{
        width: 100%;
        h1{
           text-align: center;
@@ -14,8 +9,11 @@ main{
           color: #fff;
           position: absolute;
           width: 100%;
-          max-width: 800px;
           top: 14vw;
+          @media @mobile {
+            top: 7vh;
+            font-size: 2rem;
+          }
        }
        img{
            width: 100%;
@@ -66,10 +64,26 @@ main{
             background-size: cover;
             overflow: hidden;
 
-            .bg-image {
+            #robert{
+              background: url(../img/Robert-circle.png) no-repeat center;
+              background-size: cover;
+            }
+            #jesse {
               background: url(../img/Jesse-circle.png) no-repeat center;
-              transition: all 0.3s ease;
-              background-size: cover
+              background-size: cover;
+            }
+            #derrick {
+              background: url(../img/Derrick-circle.png) no-repeat center;
+              background-size: cover;
+            }
+
+            #travis {
+              background: url(../img/Travis-circle.png) no-repeat center;
+              background-size: cover;
+            }
+            #danielle {
+              background: url(../img/danielle-circle.png) no-repeat center;
+              background-size: cover;
             }
 
             .bot {
@@ -127,8 +141,6 @@ main{
         }
       }
 
-
-}//main
 
 
 
