@@ -151,6 +151,59 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+.home {
+  width: 100%;
+}
+.home h1 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  top: 14vw;
+}
+@media (max-width: 500px) {
+  .home h1 {
+    top: 7vh;
+    font-size: 2rem;
+  }
+}
+.home img {
+  width: 100%;
+}
+.content {
+  height: 1000px;
+}
+.content .vl {
+  border-left: 2px solid #53C4C5;
+  height: 230px;
+  margin-left: 49.9%;
+  position: absolute;
+  top: 581px;
+}
+.content .logo {
+  position: absolute;
+  top: 811px;
+  left: 26%;
+}
+.content .logo .hr {
+  border-top: 2px solid #53C4C5;
+  width: 622px;
+}
+.content .vl-middle {
+  border-left: 2px solid #53C4C5;
+  height: 430px;
+  margin-left: 49.9%;
+  position: absolute;
+  top: 1092px;
+}
+.bottom {
+  width: 100%;
+}
+.bottom img {
+  width: 100%;
+}
 .about {
   width: 100%;
 }
