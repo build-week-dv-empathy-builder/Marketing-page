@@ -275,17 +275,17 @@ main {
   margin-top: 0.5rem;
   font-size: 2.5rem;
 }
-.profiles .bottom-image {
+.bottom-image {
   width: 100%;
   position: absolute;
   z-index: -1;
 }
-.profiles .contact {
+.contact {
   background: #53c3c5;
   margin-top: 35vw;
   width: 100%;
 }
-.profiles .contact h1 {
+.contact h1 {
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
@@ -296,28 +296,28 @@ main {
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
-  .profiles .contact h1 {
+  .contact h1 {
     font-size: 1.5rem;
   }
 }
-.profiles .contact form {
+.contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 75%;
   margin: 0 auto;
 }
-.profiles .contact form ::placeholder {
+.contact form ::placeholder {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.25em;
 }
-.profiles .contact form .fieldset {
+.contact form .fieldset {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.profiles .contact form .fieldset input {
+.contact form .fieldset input {
   width: calc(50% - 1.666rem);
   background: rgba(83, 195, 197, 0.75);
   border: 1.5px solid #fff;
@@ -326,13 +326,13 @@ main {
   border-radius: 4px;
 }
 @media (max-width: 500px) {
-  .profiles .contact form .fieldset input {
+  .contact form .fieldset input {
     padding: 0.333rem;
     line-height: 1rem;
     border: 1px solid #fff;
   }
 }
-.profiles .contact form textarea {
+.contact form textarea {
   border-radius: 4px;
   width: calc(100% - 1.125rem);
   background: rgba(83, 195, 197, 0.75);
@@ -344,14 +344,14 @@ main {
   padding: 0.5rem;
 }
 @media (max-width: 500px) {
-  .profiles .contact form textarea {
+  .contact form textarea {
     height: 30vh;
     padding: 0.333rem;
     line-height: 1rem;
     border: 1px solid #fff;
   }
 }
-.profiles .contact form button {
+.contact form button {
   margin-top: 1rem;
   width: 47%;
   background: rgba(83, 195, 197, 0.65);
@@ -365,13 +365,13 @@ main {
   transition: all 0.35s ease-in-out;
 }
 @media (max-width: 500px) {
-  .profiles .contact form button {
+  .contact form button {
     padding: 0.333rem;
     line-height: 1rem;
     border: 1px solid #fff;
   }
 }
-.profiles .contact form button:hover {
+.contact form button:hover {
   background: #fff;
   color: #3c9697;
 }
