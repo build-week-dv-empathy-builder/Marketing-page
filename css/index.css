@@ -362,5 +362,4 @@ main {
 .contact form button:hover {
   background: #fff;
   color: #3c9697;
-  animation: BUTTON-ANIMATION 2s ease-in;
 }
