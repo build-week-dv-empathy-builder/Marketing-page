@@ -98,18 +98,7 @@
               background-size: cover;
             }
 
-            .overlay:hover {
-              background-color: rgba(83, 195, 197, 0.75);
-              animation: BUTTON-ANIMATION 4s ease-in;
-              p{
-                display: block;
-                animation: NAME-ANIMATION 2s ease-in;
-                margin-top: 35%;
-              }
-              .fa{
-                display: block;
-              }
-            }
+            
 
             .overlay {
               font-family: -apple-system,
@@ -124,17 +113,44 @@
               sans-serif;
               font-size: 3rem;
               p, .fa{
+                text-decoration: none;
                 display: none;
                 text-align: center;
                 margin-top: 0;
+                margin: 0 auto; 
                 z-index: 100;
                 color: #fff;
             }
-            .fa{
-              margin-top: .5rem;
-              font-size: 2.5rem;
-            }
           }
+
+
+            /// overlay hover
+            .overlay:hover {
+              background-color: rgba(83, 195, 197, 0.75);
+              animation: BUTTON-ANIMATION 4s ease-in;
+              p {
+                display: block;
+                animation: NAME-ANIMATION 1s ease-in;
+                margin-top: 35%;
+              }
+              .fa {
+                display: block;
+              }
+            }
+
+            .fa {
+              font-size: 2.5rem;
+              max-width: 25%;
+              transition: all 1s ease-in;
+              padding-top: 1rem; 
+              &:hover {
+                color: #f49293;
+                transform: scale(1.5) rotateY(180deg);
+                           
+
+              }
+            }
+
         }
       } //image-container  
       }//row
