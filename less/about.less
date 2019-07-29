@@ -5,7 +5,8 @@
        h1{
           text-align: center;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          font-size: 2.5rem;
+          // font-size: 2.5rem;
+          font-size: calc(20px + 6 * ((100vw - 320px) / 680));
           color: #fff;
           position: absolute;
           width: 100%;
@@ -52,6 +53,11 @@
           cursor: pointer;
           overflow: hidden;
           border-radius: 50%;
+          transition: all 1s ease-in;
+          //hover for colorful boxshadow
+          &:hover{
+            box-shadow: 5px 5px 25px rgb(83, 195, 197);
+          }
           
           .over-flower {
             position: absolute;
@@ -111,15 +117,29 @@
               'Open Sans',
               'Helvetica Neue',
               sans-serif;
-              font-size: 3rem;
-              p, .fa{
+              // font-size: 2rem;
+              font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+              @media @mobile {
+                font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+              }
+              z-index: 100;
+              
+              // display: none;
+              .name, .fa, p{
                 text-decoration: none;
                 display: none;
                 text-align: center;
                 margin-top: 0;
                 margin: 0 auto; 
-                z-index: 100;
                 color: #fff;
+            }
+            p{
+              padding: 1.5vw 0;
+              font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+               @media @mobile {
+                 padding: 1rem 0;
+                 font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+               }
             }
           }
 
@@ -128,10 +148,14 @@
             .overlay:hover {
               background-color: rgba(83, 195, 197, 0.75);
               animation: BUTTON-ANIMATION 4s ease-in;
-              p {
+              display: block;
+              .name {
                 display: block;
                 animation: NAME-ANIMATION 1s ease-in;
-                margin-top: 35%;
+                margin-top: 25%;
+              }
+              p{
+                display: block;
               }
               .fa {
                 display: block;
@@ -139,18 +163,13 @@
             }
 
             .fa {
-              font-size: 2.5rem;
               max-width: 25%;
               transition: all 1s ease-in;
-              padding-top: 1rem; 
               &:hover {
                 color: #f49293;
-                transform: scale(1.5) rotateY(180deg);
-                           
-
+                transform: scale(1.5) rotateY(180deg);    
               }
             }
-
         }
       } //image-container  
       }//row
