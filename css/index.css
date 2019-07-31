@@ -165,17 +165,17 @@ main {
     display: flex;
   }
 }
-.nav-content {
+.nav-container .nav-content {
   width: 100%;
   height: 100%;
 }
-nav {
+.nav-container nav {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   height: 50px;
 }
-#menuToggle {
+.nav-container #menuToggle {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -184,7 +184,7 @@ nav {
   z-index: 1;
   user-select: none;
 }
-#menuToggle input {
+.nav-container #menuToggle input {
   display: flex;
   width: 40px;
   height: 32px;
@@ -193,7 +193,7 @@ nav {
   opacity: 0;
   z-index: 2;
 }
-#menuToggle span {
+.nav-container #menuToggle span {
   display: flex;
   width: 29px;
   height: 2px;
@@ -204,25 +204,25 @@ nav {
   transform-origin: 5px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
-#menuToggle span:first-child {
+.nav-container #menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
-#menuToggle span:nth-last-child(2) {
+.nav-container #menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-#menuToggle input:checked ~ span {
+.nav-container #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-3px, -1px);
-  background: #53c3c5;
+  background: rgba(235, 101, 72, 0.6);
 }
-#menuToggle input:checked ~ span:nth-last-child(3) {
+.nav-container #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-#menuToggle input:checked ~ span:nth-last-child(2) {
+.nav-container #menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
-#menu {
+.nav-container #menu {
   position: absolute;
   width: 200px;
   box-shadow: 0 0 16px rgba(244, 146, 147, 0.5);
@@ -234,13 +234,18 @@ nav {
   transform: translate(0, -110%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
-#menu li {
+.nav-container #menu li {
   text-align: center;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(83, 195, 197, 0.65);
+  border-bottom: 1px solid #f49293;
   transition-delay: 2s;
 }
-#menuToggle input:checked ~ ul {
+.nav-container #menu li a {
+  text-decoration: none;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-container #menuToggle input:checked ~ ul {
   transform: none;
 }
 .home {
