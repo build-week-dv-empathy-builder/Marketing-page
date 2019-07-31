@@ -272,7 +272,6 @@ main {
   cursor: pointer;
   text-decoration: none;
   color: #666;
-  font-family: 'Roboto', sans-serif;
 }
 .nav-container #menuToggle input:checked ~ ul {
   transform: none;
@@ -367,7 +366,6 @@ main {
 .about h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2.5rem;
   color: #fff;
   position: absolute;
@@ -463,8 +461,7 @@ main {
   background-size: cover;
 }
 .profiles .row .image-container .over-flower .overlay {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 2rem;
   z-index: 100;
 }
 @media (max-width: 500px) {
@@ -531,7 +528,6 @@ main {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -549,7 +545,6 @@ main {
 }
 .contact form ::placeholder {
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.25em;
 }
 .contact form .fieldset {
@@ -608,7 +603,6 @@ main {
   border: 1.5px solid #fff;
   border-radius: 4px;
   padding: 0.5rem;
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.25em;
   transition: all 0.35s ease-in-out;
 }
