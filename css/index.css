@@ -151,6 +151,103 @@ main {
   width: 100%;
   margin: 0 auto;
 }
+.nav-container {
+  position: absolute;
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    display: flex;
+  }
+}
+.nav-container .nav-content {
+  width: 100%;
+  height: 100%;
+}
+.nav-container nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  height: 50px;
+}
+.nav-container #menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  user-select: none;
+}
+.nav-container #menuToggle input {
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+.nav-container #menuToggle span {
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.nav-container #menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+.nav-container #menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+.nav-container #menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: rgba(235, 101, 72, 0.6);
+}
+.nav-container #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.nav-container #menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+.nav-container #menu {
+  position: absolute;
+  width: 200px;
+  box-shadow: 0 0 16px rgba(244, 146, 147, 0.5);
+  margin: -16px 0 0 -205px;
+  padding: 20px;
+  padding-top: 100px;
+  background-color: white;
+  transform-origin: 0% 0%;
+  transform: translate(0, -110%);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+.nav-container #menu li {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #f49293;
+  transition-delay: 2s;
+}
+.nav-container #menu li a {
+  text-decoration: none;
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-container #menuToggle input:checked ~ ul {
+  transform: none;
+}
 .home {
   width: 100%;
 }
@@ -249,6 +346,7 @@ main {
 }
 .about h1 {
   text-align: center;
+  text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: calc(20px + 6 * ((100vw - 320px) / 680));
   color: #fff;
@@ -458,7 +556,7 @@ main {
 .contact form textarea {
   border-radius: 4px;
   width: calc(100% - 1.125rem);
-  background: rgba(83, 195, 197, 0.75);
+  background: rgba(194, 247, 248, 0.75);
   color: #fff;
   line-height: 1.5rem;
   border: 1.5px solid #fff;
