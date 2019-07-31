@@ -5,10 +5,7 @@
        h1{
           text-align: center;
           text-transform: uppercase;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size: 2.5rem;
-          // font-size: calc(20px + 6 * ((100vw - 320px) / 680));
-
           color: #fff;
           position: absolute;
           width: 100%;
@@ -27,7 +24,6 @@
 
     .profiles{
         padding: 1rem;
-
         .row{
           display: flex;
           justify-content: space-evenly;
@@ -109,24 +105,11 @@
             
 
             .overlay {
-              font-family: -apple-system,
-              BlinkMacSystemFont,
-              'Segoe UI',
-              Roboto,
-              Oxygen,
-              Ubuntu,
-              Cantarell,
-              'Open Sans',
-              'Helvetica Neue',
-              sans-serif;
-              // font-size: 2rem;
-              font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+              font-size: 2rem;
               @media @mobile {
                 font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
               }
               z-index: 100;
-              
-              // display: none;
               .name, .fab, p{
                 text-decoration: none;
                 display: none;
@@ -196,8 +179,6 @@
           color: #fff;
           text-align: center;
           padding: 1rem;
-          font-family: -apple-system, BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,
-          Cantarell,'Open Sans','Helvetica Neue',sans-serif;
           font-size: 2rem;
           margin-bottom: 1rem;
           @media @mobile {
@@ -212,7 +193,6 @@
           margin: 0 auto;
           ::placeholder {
             color: #fff;
-            font-family: Arial, Helvetica, sans-serif;
             letter-spacing: .25em;
           }
           .fieldset{
@@ -267,9 +247,6 @@
             border: 1.5px solid #fff;
             border-radius: 4px;
             padding: .5rem;
-            font-family: Arial,
-            Helvetica,
-            sans-serif;
             letter-spacing: .25em;
             transition: all .35s ease-in-out;
             @media @mobile {
