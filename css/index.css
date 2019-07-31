@@ -473,7 +473,7 @@ main {
   }
 }
 .profiles .row .image-container .over-flower .overlay .name,
-.profiles .row .image-container .over-flower .overlay .fa,
+.profiles .row .image-container .over-flower .overlay .fab,
 .profiles .row .image-container .over-flower .overlay p {
   text-decoration: none;
   display: none;
@@ -505,14 +505,14 @@ main {
 .profiles .row .image-container .over-flower .overlay:hover p {
   display: block;
 }
-.profiles .row .image-container .over-flower .overlay:hover .fa {
+.profiles .row .image-container .over-flower .overlay:hover .fab {
   display: block;
 }
-.profiles .row .image-container .over-flower .fa {
+.profiles .row .image-container .over-flower .fab {
   max-width: 25%;
   transition: all 1s ease-in;
 }
-.profiles .row .image-container .over-flower .fa:hover {
+.profiles .row .image-container .over-flower .fab:hover {
   color: #f49293;
   transform: scale(1.5) rotateY(180deg);
 }
