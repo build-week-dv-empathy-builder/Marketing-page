@@ -16,10 +16,30 @@
 
   <main>
     <header class="home">
-      <nav>
+      <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="about.html">Meet Our Team</a>
-      </nav>
+      </nav> <!-- End of main nav -->
+      
+      <!-- Mobile navbar -->
+      <div class="nav-container">
+          <div class="nav-content">
+            <nav role="navigation">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                  <li><a class="active" href="index.html"> Home</a></li>
+                  <li><a class="active" href="about.html"> About Us</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      
+      </div> <!-- End of mobile navbar -->
+      
       <h1>Domestic Violence Empathy Builder</h1>
       <img src="./img/background-triangle-top.svg" alt="background-image">
     </header>

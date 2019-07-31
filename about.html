@@ -6,6 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DV Empathy Builder - About</title>
+    <!-- font-awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -17,9 +22,42 @@
 <body>
 
   <main>
+
     <header class="about">
+      
+      <!-- Main navbar-->
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Meet Our Team</a>
+      </nav> <!-- End of main nav -->
+     
+     
+      <!-- mobile nav -->
+     <div class="nav-container">
+       <div class="nav-content">
+         <nav role="navigation">
+           <div id="menuToggle">
+             <input type="checkbox" />
+             <span></span>
+             <span></span>
+             <span></span>
+             <ul id="menu">
+               <li><a class="active" href="index.html"> Home</a></li>
+               <li><a class="active" href="about.html"> About Us</a></li>
+             </ul>
+           </div>
+         </nav>
+       </div>
+     </div>
+
+
+    
+
+
       <h1>Meet Our Team</h1>
       <img src="./img/background-triangle-top.svg" alt="background-image">
+
+     
     </header>
 
     <section class="profiles">
@@ -28,7 +66,9 @@
             <div class="over-flower">
               <div id="jesse" class="bot bg-image"></div>
               <div class="bot overlay">
-                <p>Jesse</p>
+                <h3 class="name">Jesse Tingle</h3>
+                <p>Web UI Developer</p>
+                <a class="fa fa-github" target="_blank" href="https://github.com/Jesse-Tingle"></a>
               </div>
             </div>
           </div>
@@ -37,7 +77,9 @@
             <div class="over-flower">
               <div id="robert" class="bot bg-image"></div>
               <div class="bot overlay">
-                <p>Robert</p>
+                <h3 class="name">Robert Allen</h3>
+                <p>Web UI Developer</p>
+                <a class="fa fa-github" target="_blank" href="https://github.com/bobbidigi"></a>
               </div>
             </div>
           </div>
@@ -48,7 +90,9 @@
           <div class="over-flower">
             <div id="danielle" class="bot bg-image"></div>
             <div class="bot overlay">
-              <p>Danielle</p>
+              <h3 class="name">Danielle Baxter</h3>
+              <p>React Developer</p>
+               <a class="fa fa-github" target="_blank" href="https://github.com/danibaxx"></a>
             </div>
           </div>
         </div>
@@ -57,7 +101,9 @@
           <div class="over-flower">
             <div id="travis" class="bot bg-image"></div>
             <div class="bot overlay">
-              <p>Travis</p>
+              <h3 class="name">Travis Little</h3>
+              <p>React Developer</p>
+               <a class="fa fa-github" target="_blank" href="https://github.com/travislittle84"></a>
             </div>
           </div>
         </div>
@@ -68,7 +114,9 @@
           <div class="over-flower">
             <div id="derrick" class="bot bg-image"></div>
             <div class="bot overlay">
-              <p>Derrick</p>
+              <h3 class="name">Derrick Mei</h3>
+              <p>Backend Stewart</p>
+               <a class="fa fa-github" target="_blank" href="https://github.com/Derrick-Mei"></a>
             </div>
           </div>
         </div>
@@ -76,9 +124,23 @@
          
     </section>
 
-    <section class="contact">
-      <img src="./img/background-bottom.svg" alt="background-image">
+    <!-- ////bottom image -->
+    <img class="bottom-image" src="./img/background-bottom.svg" alt="background-image">
+
+    <!-- //contact -->
+    <section class="contact">  
+      <h1>Questions or comments?</h1>
+      <form action="/action_page.php" method="POST">
+        <div class="fieldset" class="name-email">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+        </div>
+        
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" onclick="alert('Hello World!')">Send Message</button>
+      </form>
     </section>
+
   </main>
 
 </body>
