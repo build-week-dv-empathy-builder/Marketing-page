@@ -155,13 +155,22 @@ main {
   width: 100%;
 }
 .home nav {
-  font-size: 3em;
-  position: absolute;
-  top: 35px;
-  left: 30px;
+  font-size: 2.3em;
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  background-color: #F49293;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  justify-content: space-evenly;
+  z-index: 1;
+  opacity: 0.8;
 }
 .home nav a {
   text-decoration: none;
+  color: white;
+  font-family: roboto;
 }
 .home h1 {
   text-align: center;
