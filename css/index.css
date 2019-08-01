@@ -287,10 +287,6 @@ html main {
   border-bottom: 1px solid #f49293;
   transition-delay: 2s;
 }
-.nav-container #menu li:hover {
-  background: #f49293;
-  animation: BUTTON-ANIMATION 4s ease-in;
-}
 .nav-container #menu li a {
   text-decoration: none;
   color: #666;
@@ -595,7 +591,6 @@ html main {
 }
 .about h1 {
   text-align: center;
-  text-transform: uppercase;
   font-size: 2.5rem;
   color: #fff;
   position: absolute;
