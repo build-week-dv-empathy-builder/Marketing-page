@@ -9,9 +9,11 @@
     <!-- font-awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <!-- css -->
     <link rel="stylesheet" href="css/index.css">
 
     <!--[if lt IE 9]>
@@ -42,8 +44,21 @@
              <span></span>
              <span></span>
              <ul id="menu">
-               <li><a class="active" href="index.html"> Home</a></li>
-               <li><a class="active" href="about.html"> About Us</a></li>
+              <li>
+                <a class="active" href="index.html">
+                  <i class="fas fa-home"></i> Home
+                </a>
+              </li>
+              <li>
+                <a class="active" href="about.html">
+                  <i class="fas fa-users"></i> About Us
+                </a>
+              </li>
+              <li>
+                <a class="active" href="index.html">
+                  <i class="fas fa-calculator"></i> Calculator
+                </a>
+              </li>
              </ul>
            </div>
          </nav>
@@ -68,7 +83,7 @@
               <div class="bot overlay">
                 <h3 class="name">Jesse Tingle</h3>
                 <p>Web UI Developer</p>
-                <a class="fa fa-github" target="_blank" href="https://github.com/Jesse-Tingle"></a>
+                <a class="fab fa-github-alt" target="_blank" href="https://github.com/Jesse-Tingle"></a>
               </div>
             </div>
           </div>
@@ -79,7 +94,7 @@
               <div class="bot overlay">
                 <h3 class="name">Robert Allen</h3>
                 <p>Web UI Developer</p>
-                <a class="fa fa-github" target="_blank" href="https://github.com/bobbidigi"></a>
+                <a class="fab fa-github-alt" target="_blank" href="https://github.com/bobbidigi"></a>
               </div>
             </div>
           </div>
@@ -92,7 +107,7 @@
             <div class="bot overlay">
               <h3 class="name">Danielle Baxter</h3>
               <p>React Developer</p>
-               <a class="fa fa-github" target="_blank" href="https://github.com/danibaxx"></a>
+               <a class="fab fa-github-alt" target="_blank" href="https://github.com/danibaxx"></a>
             </div>
           </div>
         </div>
@@ -103,7 +118,7 @@
             <div class="bot overlay">
               <h3 class="name">Travis Little</h3>
               <p>React Developer</p>
-               <a class="fa fa-github" target="_blank" href="https://github.com/travislittle84"></a>
+               <a class="fab fa-github-alt" target="_blank" href="https://github.com/travislittle84"></a>
             </div>
           </div>
         </div>
@@ -116,7 +131,7 @@
             <div class="bot overlay">
               <h3 class="name">Derrick Mei</h3>
               <p>Backend Stewart</p>
-               <a class="fa fa-github" target="_blank" href="https://github.com/Derrick-Mei"></a>
+               <a class="fab fa-github-alt" target="_blank" href="https://github.com/Derrick-Mei"></a>
             </div>
           </div>
         </div>
@@ -126,6 +141,7 @@
 
     <!-- ////bottom image -->
     <img class="bottom-image" src="./img/background-bottom.svg" alt="background-image">
+
 
     <!-- //contact -->
     <section class="contact">  
@@ -137,7 +153,7 @@
         </div>
         
         <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit" onclick="alert('Hello World!')">Send Message</button>
+        <button type="submit" onclick="alert('Hello World!')"><i class="fas fa-paper-plane"></i></button>
       </form>
     </section>
 
