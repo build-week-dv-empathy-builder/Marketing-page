@@ -164,19 +164,40 @@ html main {
   background-color: #F49293;
   padding-top: 25px;
   padding-bottom: 25px;
-  justify-content: space-evenly;
   z-index: 1;
   opacity: 0.8;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .main-nav {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 500px) {
   .main-nav {
     display: none;
   }
 }
+.main-nav .text {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+@media (max-width: 800px) {
+  .main-nav .text {
+    width: 80%;
+  }
+}
 .main-nav a {
-  cursor: pointer;
   text-decoration: none;
   color: white;
+  text-align: center;
+  width: 35%;
+}
+.main-nav a i.fas {
+  padding-right: 5%;
 }
 .nav-container {
   position: absolute;
@@ -216,7 +237,6 @@ html main {
   width: 40px;
   height: 32px;
   position: absolute;
-  cursor: pointer;
   opacity: 0;
   z-index: 2;
 }
@@ -272,12 +292,48 @@ html main {
   animation: BUTTON-ANIMATION 4s ease-in;
 }
 .nav-container #menu li a {
-  cursor: pointer;
   text-decoration: none;
   color: #666;
 }
 .nav-container #menuToggle input:checked ~ ul {
   transform: none;
+}
+.footer {
+  position: absolute;
+  top: 184vw;
+  left: 23vw;
+}
+.footer .social-icons {
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 35px;
+}
+.footer .social-icons a {
+  text-align: center;
+  cursor: help;
+}
+.footer .social-icons .twitter {
+  color: white;
+}
+.footer .social-icons .facebook {
+  color: white;
+}
+.footer .social-icons .github {
+  color: white;
+}
+.footer .copywrite {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem;
+}
+.footer .copywrite p {
+  color: white;
+}
+.footer .copywrite a {
+  color: #262D35;
+  text-decoration: none;
 }
 .home {
   width: 100%;
@@ -289,6 +345,11 @@ html main {
   position: absolute;
   width: 100%;
   top: 15vw;
+}
+@media (max-width: 800px) {
+  .home h1 {
+    font-size: 4rem;
+  }
 }
 @media (max-width: 500px) {
   .home h1 {
@@ -412,7 +473,6 @@ html main {
   border-radius: 5px;
   box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.5);
   transition: all 0.3s ease;
-  cursor: pointer;
   overflow: hidden;
   border-radius: 50%;
   transition: all 1s ease-in;
