@@ -1,0 +1,76 @@
+.footer {
+    position: absolute;
+    top: 184vw;
+    left: 23vw;
+    
+    @media @tablet {
+        top: 196vw;
+        left: 19vw;
+    }
+
+    @media @mobile {
+        top: 379vw;
+        left: 16vw;
+    }
+
+    .social-icons {
+        font-size: 5rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 35px;
+
+        @media @tablet {
+            font-size: 4rem;
+            padding-bottom: 20px;
+        }
+
+        @media @mobile {
+            font-size: 2.3rem;
+            padding-bottom: 3px;
+        }
+
+        a {
+            text-align: center;
+            cursor: help;
+        }
+        
+        .twitter{
+            color: white;
+        }
+
+        .facebook {
+            color: white;
+        }
+
+        .github {
+            color: white;
+        }
+        
+    }
+
+    .copywrite {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 5rem;
+
+        @media @tablet {
+            font-size: 2rem;
+            line-height: 4rem;
+        }
+
+        @media @mobile {
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+
+        p {
+            color: white;
+        }
+
+        a {
+            color: #262D35;
+            text-decoration: none;
+        }
+    }
+}
