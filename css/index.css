@@ -284,7 +284,7 @@ html main {
 }
 .home h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 5.5rem;
   color: #fff;
   position: absolute;
   width: 100%;
@@ -324,9 +324,11 @@ html main {
 }
 .content .description1 .text h2 {
   font-size: 3em;
+  padding-bottom: 15px;
 }
 .content .description1 .text p {
   font-size: 1.5em;
+  line-height: 2.2rem;
 }
 .content .description2 {
   display: flex;
@@ -338,9 +340,11 @@ html main {
 }
 .content .description2 .text h2 {
   font-size: 3em;
+  padding-bottom: 15px;
 }
 .content .description2 .text p {
   font-size: 1.5em;
+  line-height: 2.2rem;
 }
 .content .description3 {
   display: flex;
@@ -352,9 +356,11 @@ html main {
 }
 .content .description3 .text h2 {
   font-size: 3em;
+  padding-bottom: 15px;
 }
 .content .description3 .text p {
   font-size: 1.5em;
+  line-height: 2.2rem;
 }
 .bottom {
   width: 100%;
