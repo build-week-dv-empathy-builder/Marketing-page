@@ -4,15 +4,19 @@
 
     h1{
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 5.5rem;
         color: #fff;
         position: absolute;
         width: 100%;
         top: 15vw;
           
+        @media @tablet {
+            font-size: 4rem;
+        }
+
         @media @mobile {
-            top: 7vh;
-            font-size: 2rem;
+            top: 12vh;
+            font-size: 2.5rem;
           }
           
     }
@@ -27,30 +31,102 @@
     flex-direction: column;
     padding-left: 20%;
     padding-top: 3%;
-    
-    .logo-img {
-        padding-left: 7%;
-        width: 65%;
-        padding-bottom: 50px;
-        padding-top: 10px;
+
+    @media @tablet {
+        padding-left: 13%;
+        height: 1000px;
     }
+
+    @media @mobile {
+        padding-left: 0%;
+        height: 1540px;
+        align-items: center;
+    }
+
+    .logo {
+        
+        @media @tablet {
+            width: 560px;
+            text-align: center;
+        }
+
+        @media @mobile {
+            width: 400px;
+        }
+        
+
+        .logo-img {
+            padding-left: 7%;
+            width: 65%;
+            padding-bottom: 50px;
+            padding-top: 10px;
+
+            @media @mobile {
+                padding-left: 0%;
+                width: 75%;
+                padding-bottom: 30px;
+            }
+
+        }
+    }
+    
+    
     img {
         width: 37%;
+
+        @media @tablet {
+            width: 50%;
+        }
+
+        @media @mobile {
+            width: 75%;
+        }
     }
 
     .description1 {
         display: flex;
+
+        @media @tablet {
+            width: 560px;
+        }
+
+        @media @mobile {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
         
         .text {
             width: 34%;
             padding-left: 2%;
 
+            @media @tablet {
+                width: 50%;
+            }
+
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
             h2 {
-                font-size: 3em;
+                font-size: 3rem;
+                padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.5rem;
+                line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
@@ -58,17 +134,48 @@
     .description2 {
         display: flex;
 
+        @media @tablet {
+            width: 560px;
+        }
+
+        @media @mobile {
+            width: 400px;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
         .text {
             width: 34%;
             padding-right: 3%;
             padding-top: 3%;
 
+            @media @tablet {
+                width: 50%;
+            }      
+            
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
             h2 {
                 font-size: 3em;
+                padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
                 font-size: 1.5em;
+                line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
@@ -76,17 +183,48 @@
     .description3 {
         display: flex;
 
+        @media @tablet {
+            width: 560px;
+        }
+
+        @media @mobile {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .text {
             width: 34%;
             padding-left: 2%;
             padding-top: 2%;
 
+            @media @tablet {
+                width: 50%;
+            }
+
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
             h2 {
                 font-size: 3em;
+                padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
                 font-size: 1.5em;
+                line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
