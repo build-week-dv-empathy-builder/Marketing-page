@@ -367,7 +367,18 @@ html main {
   padding-left: 20%;
   padding-top: 3%;
 }
-.content .logo-img {
+@media (max-width: 800px) {
+  .content {
+    padding-left: 13%;
+  }
+}
+@media (max-width: 800px) {
+  .content .logo {
+    width: 560px;
+    text-align: center;
+  }
+}
+.content .logo .logo-img {
   padding-left: 7%;
   width: 65%;
   padding-bottom: 50px;
@@ -386,7 +397,7 @@ html main {
 }
 @media (max-width: 800px) {
   .content .description1 {
-    width: 472px;
+    width: 560px;
   }
 }
 .content .description1 .text {
@@ -399,19 +410,30 @@ html main {
   }
 }
 .content .description1 .text h2 {
-  font-size: 3em;
+  font-size: 3rem;
   padding-bottom: 15px;
 }
+@media (max-width: 800px) {
+  .content .description1 .text h2 {
+    font-size: 2.1rem;
+  }
+}
 .content .description1 .text p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   line-height: 2.2rem;
+}
+@media (max-width: 800px) {
+  .content .description1 .text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 .content .description2 {
   display: flex;
 }
 @media (max-width: 800px) {
   .content .description2 {
-    width: 472px;
+    width: 560px;
   }
 }
 .content .description2 .text {
@@ -428,16 +450,27 @@ html main {
   font-size: 3em;
   padding-bottom: 15px;
 }
+@media (max-width: 800px) {
+  .content .description2 .text h2 {
+    font-size: 2.1rem;
+  }
+}
 .content .description2 .text p {
   font-size: 1.5em;
   line-height: 2.2rem;
+}
+@media (max-width: 800px) {
+  .content .description2 .text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 .content .description3 {
   display: flex;
 }
 @media (max-width: 800px) {
   .content .description3 {
-    width: 472px;
+    width: 560px;
   }
 }
 .content .description3 .text {
@@ -454,9 +487,20 @@ html main {
   font-size: 3em;
   padding-bottom: 15px;
 }
+@media (max-width: 800px) {
+  .content .description3 .text h2 {
+    font-size: 2.1rem;
+  }
+}
 .content .description3 .text p {
   font-size: 1.5em;
   line-height: 2.2rem;
+}
+@media (max-width: 800px) {
+  .content .description3 .text p {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
 }
 .bottom {
   width: 100%;

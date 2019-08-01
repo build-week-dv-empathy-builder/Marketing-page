@@ -31,13 +31,28 @@
     flex-direction: column;
     padding-left: 20%;
     padding-top: 3%;
-    
-    .logo-img {
+
+    @media @tablet {
+        padding-left: 13%;
+    }
+
+    .logo {
+        
+        @media @tablet {
+            width: 560px;
+            text-align: center;
+        }
+        
+
+        .logo-img {
         padding-left: 7%;
         width: 65%;
         padding-bottom: 50px;
         padding-top: 10px;
+        }
     }
+    
+    
     img {
         width: 37%;
 
@@ -50,7 +65,7 @@
         display: flex;
 
         @media @tablet {
-            width: 472px;
+            width: 560px;
         }
         
         .text {
@@ -62,13 +77,22 @@
             }
 
             h2 {
-                font-size: 3em;
+                font-size: 3rem;
                 padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.5rem;
                 line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
@@ -77,7 +101,7 @@
         display: flex;
 
         @media @tablet {
-            width: 472px;
+            width: 560px;
         }
 
         .text {
@@ -92,11 +116,20 @@
             h2 {
                 font-size: 3em;
                 padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
                 font-size: 1.5em;
                 line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
@@ -105,7 +138,7 @@
         display: flex;
 
         @media @tablet {
-            width: 472px;
+            width: 560px;
         }
 
         .text {
@@ -120,11 +153,20 @@
             h2 {
                 font-size: 3em;
                 padding-bottom: 15px;
+
+                @media @tablet {
+                    font-size: 2.1rem;
+                }
             }
 
             p {
                 font-size: 1.5em;
                 line-height: 2.2rem;
+
+                @media @tablet {
+                    font-size: 1.3rem;
+                    line-height: 2rem;
+                }
             }
         }
     }
