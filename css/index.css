@@ -296,19 +296,17 @@ html main {
 }
 .footer {
   position: absolute;
-  top: 184vw;
-  left: 23vw;
+  margin-top: -22vw;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .footer {
-    top: 196vw;
-    left: 19vw;
+    margin-top: -22vw;
   }
 }
 @media (max-width: 500px) {
   .footer {
-    top: 379vw;
-    left: 16vw;
+    margin-top: 24vw;
   }
 }
 .footer .social-icons {
@@ -321,7 +319,7 @@ html main {
 @media (max-width: 800px) {
   .footer .social-icons {
     font-size: 4rem;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
   }
 }
 @media (max-width: 500px) {
@@ -350,14 +348,14 @@ html main {
 }
 @media (max-width: 800px) {
   .footer .copywrite {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 4rem;
   }
 }
 @media (max-width: 500px) {
   .footer .copywrite {
     font-size: 1.4rem;
-    line-height: 3rem;
+    line-height: 2.3rem;
   }
 }
 .footer .copywrite p {
@@ -385,7 +383,7 @@ html main {
 }
 @media (max-width: 500px) {
   .home h1 {
-    top: 12vh;
+    top: 7vh;
     font-size: 2.5rem;
   }
 }
@@ -393,8 +391,7 @@ html main {
   width: 100%;
 }
 .content {
-  height: 1500px;
-  display: flex;
+  display: inline-table;
   flex-direction: column;
   padding-left: 20%;
   padding-top: 3%;
@@ -402,37 +399,30 @@ html main {
 @media (max-width: 800px) {
   .content {
     padding-left: 13%;
-    height: 1000px;
   }
 }
 @media (max-width: 500px) {
   .content {
     padding-left: 0%;
-    height: 1540px;
-    align-items: center;
   }
 }
 @media (max-width: 800px) {
   .content .logo {
-    width: 560px;
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  .content .logo {
-    width: 400px;
-  }
 }
 .content .logo .logo-img {
   padding-left: 7%;
-  width: 65%;
+  width: 90%;
   padding-bottom: 50px;
   padding-top: 10px;
 }
 @media (max-width: 500px) {
   .content .logo .logo-img {
     padding-left: 0%;
-    width: 75%;
+    width: 70%;
     padding-bottom: 30px;
   }
 }
@@ -453,13 +443,9 @@ html main {
   display: flex;
 }
 @media (max-width: 800px) {
-  .content .description1 {
-    width: 560px;
-  }
 }
 @media (max-width: 500px) {
   .content .description1 {
-    width: 400px;
     flex-direction: column;
     align-items: center;
   }
@@ -503,13 +489,9 @@ html main {
   display: flex;
 }
 @media (max-width: 800px) {
-  .content .description2 {
-    width: 560px;
-  }
 }
 @media (max-width: 500px) {
   .content .description2 {
-    width: 400px;
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -554,13 +536,9 @@ html main {
   display: flex;
 }
 @media (max-width: 800px) {
-  .content .description3 {
-    width: 560px;
-  }
 }
 @media (max-width: 500px) {
   .content .description3 {
-    width: 400px;
     flex-direction: column;
     align-items: center;
   }
@@ -603,6 +581,7 @@ html main {
 }
 .bottom {
   width: 100%;
+  position: absolute;
 }
 .bottom img {
   width: 100%;
