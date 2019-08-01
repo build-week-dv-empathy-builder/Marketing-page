@@ -15,8 +15,8 @@
         }
 
         @media @mobile {
-            top: 7vh;
-            font-size: 2rem;
+            top: 12vh;
+            font-size: 2.5rem;
           }
           
     }
@@ -37,19 +37,36 @@
         height: 1000px;
     }
 
+    @media @mobile {
+        padding-left: 0%;
+        height: 1540px;
+        align-items: center;
+    }
+
     .logo {
         
         @media @tablet {
             width: 560px;
             text-align: center;
         }
+
+        @media @mobile {
+            width: 400px;
+        }
         
 
         .logo-img {
-        padding-left: 7%;
-        width: 65%;
-        padding-bottom: 50px;
-        padding-top: 10px;
+            padding-left: 7%;
+            width: 65%;
+            padding-bottom: 50px;
+            padding-top: 10px;
+
+            @media @mobile {
+                padding-left: 0%;
+                width: 75%;
+                padding-bottom: 30px;
+            }
+
         }
     }
     
@@ -60,6 +77,10 @@
         @media @tablet {
             width: 50%;
         }
+
+        @media @mobile {
+            width: 75%;
+        }
     }
 
     .description1 {
@@ -68,6 +89,12 @@
         @media @tablet {
             width: 560px;
         }
+
+        @media @mobile {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
         
         .text {
             width: 34%;
@@ -75,6 +102,12 @@
 
             @media @tablet {
                 width: 50%;
+            }
+
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
 
             h2 {
@@ -105,6 +138,12 @@
             width: 560px;
         }
 
+        @media @mobile {
+            width: 400px;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
         .text {
             width: 34%;
             padding-right: 3%;
@@ -112,7 +151,13 @@
 
             @media @tablet {
                 width: 50%;
-            }            
+            }      
+            
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
 
             h2 {
                 font-size: 3em;
@@ -142,6 +187,12 @@
             width: 560px;
         }
 
+        @media @mobile {
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .text {
             width: 34%;
             padding-left: 2%;
@@ -149,6 +200,12 @@
 
             @media @tablet {
                 width: 50%;
+            }
+
+            @media @mobile {
+                width: 72%;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
 
             h2 {
