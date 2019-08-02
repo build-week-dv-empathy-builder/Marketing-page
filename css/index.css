@@ -296,7 +296,7 @@ html main {
 }
 .footer {
   position: absolute;
-  margin-top: -22vw;
+  margin-top: 28vw;
   width: 100%;
 }
 @media (max-width: 800px) {
@@ -406,6 +406,10 @@ html main {
     padding-left: 0%;
   }
 }
+.content .logo {
+  padding-left: 5%;
+  width: 65%;
+}
 @media (max-width: 800px) {
   .content .logo {
     text-align: center;
@@ -414,9 +418,8 @@ html main {
 @media (max-width: 500px) {
 }
 .content .logo .logo-img {
-  padding-left: 7%;
-  width: 90%;
-  padding-bottom: 50px;
+  width: 100%;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 @media (max-width: 500px) {
