@@ -170,7 +170,7 @@ html main {
 }
 @media (max-width: 800px) {
   .main-nav {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -301,7 +301,7 @@ html main {
 }
 @media (max-width: 800px) {
   .footer {
-    margin-top: -22vw;
+    margin-top: 26vw;
   }
 }
 @media (max-width: 500px) {
