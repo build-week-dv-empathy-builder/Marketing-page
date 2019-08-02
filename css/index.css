@@ -398,12 +398,14 @@ html main {
 }
 @media (max-width: 800px) {
   .content {
-    padding-left: 13%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media (max-width: 500px) {
   .content {
     padding-left: 0%;
+    padding-right: 0%;
   }
 }
 .content .logo {
@@ -413,9 +415,9 @@ html main {
 @media (max-width: 800px) {
   .content .logo {
     text-align: center;
+    padding-left: 16%;
+    padding-bottom: 20px;
   }
-}
-@media (max-width: 500px) {
 }
 .content .logo .logo-img {
   width: 100%;
@@ -444,8 +446,6 @@ html main {
 }
 .content .description1 {
   display: flex;
-}
-@media (max-width: 800px) {
 }
 @media (max-width: 500px) {
   .content .description1 {
@@ -491,8 +491,6 @@ html main {
 .content .description2 {
   display: flex;
 }
-@media (max-width: 800px) {
-}
 @media (max-width: 500px) {
   .content .description2 {
     flex-direction: column-reverse;
@@ -537,8 +535,6 @@ html main {
 }
 .content .description3 {
   display: flex;
-}
-@media (max-width: 800px) {
 }
 @media (max-width: 500px) {
   .content .description3 {
