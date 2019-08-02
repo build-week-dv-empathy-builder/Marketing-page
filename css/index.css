@@ -307,6 +307,7 @@ html main {
 @media (max-width: 500px) {
   .footer {
     margin-top: 24vw;
+    background-color: #53C3C5;
   }
 }
 .footer .social-icons {
