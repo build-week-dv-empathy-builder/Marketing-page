@@ -296,7 +296,7 @@ html main {
 }
 .footer {
   position: absolute;
-  margin-top: -22vw;
+  margin-top: 28vw;
   width: 100%;
 }
 @media (max-width: 800px) {
