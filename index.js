@@ -6,3 +6,4 @@ window.addEventListener('load', (event) => {
         // event.target.body.classList.remove("bodyAnimation");
     // }, 3000);
 });
+
