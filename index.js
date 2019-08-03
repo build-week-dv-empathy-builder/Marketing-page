@@ -7,7 +7,6 @@ window.addEventListener('load', (event) => {
     console.log(windowLocation);
     if(windowLocation === "/about.html"){
         footer.style.backgroundImage = "url('./img/background-bottom.svg')";
-        copy.style.marginTop = 0;
     }
 });
 

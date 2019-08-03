@@ -310,6 +310,7 @@ html main {
   font-size: 3rem;
   text-align: center;
   line-height: 5rem;
+  width: 100%;
 }
 @media (max-width: 800px) {
   .footer .copywrite {
@@ -763,14 +764,10 @@ html main {
   z-index: -1;
 }
 .contact {
-  margin-top: 35vw;
-  margin-bottom: 10rem;
+  margin: 5vw 0;
   width: 100%;
 }
 @media (max-width: 500px) {
-  .contact {
-    margin-bottom: 5rem;
-  }
 }
 .contact h1 {
   text-transform: uppercase;
@@ -828,7 +825,7 @@ html main {
   line-height: 1.5rem;
   border: 1.5px solid #fff;
   margin-top: 1rem;
-  height: 40vh;
+  height: 33vw;
   padding: 0.5rem;
 }
 .contact form textarea:focus {
