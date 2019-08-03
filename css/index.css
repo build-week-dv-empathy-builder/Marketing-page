@@ -576,6 +576,29 @@ html main {
     line-height: 2rem;
   }
 }
+.content .description3 .text button {
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  background: #eb6548;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #eb6548, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.content .description3 .text button:hover {
+  background: #f49293;
+  box-shadow: 0 0 0 4px #f49293, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #851d4d;
+  transform: scale(1.075);
+}
 .bottom {
   width: 100%;
   position: absolute;
