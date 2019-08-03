@@ -434,6 +434,7 @@ html main {
 }
 .content img {
   width: 37%;
+  height: 100%;
 }
 @media (max-width: 800px) {
   .content img {
