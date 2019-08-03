@@ -296,53 +296,17 @@ html main {
 }
 .footer {
   position: absolute;
-  margin-top: 28vw;
+  background-image: url("../img/background-bottom-small.svg");
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
   width: 100%;
 }
-@media (max-width: 800px) {
-  .footer {
-    margin-top: 26vw;
-  }
-}
-@media (max-width: 500px) {
-  .footer {
-    margin-top: 24vw;
-    background-color: #53C3C5;
-  }
-}
-.footer .social-icons {
-  font-size: 5rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 35px;
-}
-@media (max-width: 800px) {
-  .footer .social-icons {
-    font-size: 4rem;
-    padding-bottom: 3px;
-  }
-}
-@media (max-width: 500px) {
-  .footer .social-icons {
-    font-size: 2.3rem;
-    padding-bottom: 3px;
-  }
-}
-.footer .social-icons a {
-  text-align: center;
-  cursor: help;
-}
-.footer .social-icons .twitter {
-  color: white;
-}
-.footer .social-icons .facebook {
-  color: white;
-}
-.footer .social-icons .github {
-  color: white;
-}
 .footer .copywrite {
+  margin-top: calc(33vw + 10vh);
   font-size: 3rem;
   text-align: center;
   line-height: 5rem;
@@ -358,6 +322,38 @@ html main {
     font-size: 1.4rem;
     line-height: 2.3rem;
   }
+}
+.footer .copywrite .social-icons {
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 35px;
+}
+@media (max-width: 800px) {
+  .footer .copywrite .social-icons {
+    font-size: 4rem;
+    padding-bottom: 3px;
+  }
+}
+@media (max-width: 500px) {
+  .footer .copywrite .social-icons {
+    font-size: 2.3rem;
+    padding-bottom: 3px;
+  }
+}
+.footer .copywrite .social-icons a {
+  text-align: center;
+  cursor: help;
+}
+.footer .copywrite .social-icons .twitter {
+  color: white;
+}
+.footer .copywrite .social-icons .facebook {
+  color: white;
+}
+.footer .copywrite .social-icons .github {
+  color: white;
 }
 .footer .copywrite p {
   color: white;
@@ -743,7 +739,6 @@ html main {
   z-index: -1;
 }
 .contact {
-  background: #53c3c5;
   margin-top: 35vw;
   width: 100%;
 }
