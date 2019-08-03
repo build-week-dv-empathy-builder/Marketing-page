@@ -104,19 +104,21 @@
             
 
             .overlay {
-              font-size: 2rem;
+              //font-size: 2rem;
               @media @mobile {
                 font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
               }
               z-index: 100;
               .name, .fab, p{
-                text-decoration: none;
-                display: none;
-                text-align: center;
-                margin-top: 0;
-                margin: 0 auto; 
-                color: #fff;
+                .social-styles();
+                font-size: 3rem;  
             }
+
+            .about-social-icons {
+              display: flex;
+              flex-direction: row;
+            }
+
             p{
               padding: 1.5vw 0;
               font-size: calc(12px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));

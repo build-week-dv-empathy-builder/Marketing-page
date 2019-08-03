@@ -19,6 +19,14 @@
     margin-top: 25%;
   }
 }
+.social-styles {
+  text-decoration: none;
+  display: none;
+  text-align: center;
+  margin-top: 0;
+  margin: 0 auto;
+  color: #fff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -686,7 +694,6 @@ html main {
   background-size: cover;
 }
 .profiles .row .image-container .over-flower .overlay {
-  font-size: 2rem;
   z-index: 100;
 }
 @media (max-width: 500px) {
@@ -703,6 +710,11 @@ html main {
   margin-top: 0;
   margin: 0 auto;
   color: #fff;
+  font-size: 3rem;
+}
+.profiles .row .image-container .over-flower .overlay .about-social-icons {
+  display: flex;
+  flex-direction: row;
 }
 .profiles .row .image-container .over-flower .overlay p {
   padding: 1.5vw 0;
