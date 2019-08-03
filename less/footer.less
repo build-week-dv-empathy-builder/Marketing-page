@@ -1,18 +1,43 @@
 .footer {
     position: absolute;
-    margin-top: 28vw;
+    background-image: url("../img/background-bottom-small.svg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    // height: 100%;
+
+    // margin-top: 28vw;
     width: 100%;
+    // background-color: #53C3C5;
     
-    @media @tablet {
-        margin-top: 26vw;
-    }
+    // @media @tablet {
+    //     margin-top: 26vw;
+    // }
 
-    @media @mobile {
-        margin-top: 24vw;
-        background-color: #53C3C5;
-    }
+    // @media @mobile {
+    //     margin-top: 24vw;
+    // }
 
-    .social-icons {
+    
+
+    .copywrite {
+        margin-top: calc(33vw + 10vh);
+        font-size: 3rem;
+        text-align: center;
+        line-height: 5rem;
+
+        @media @tablet {
+            font-size: 2.5rem;
+            line-height: 4rem;
+        }
+
+        @media @mobile {
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+        }
+
+
+        .social-icons {
         font-size: 5rem;
         text-align: center;
         display: flex;
@@ -47,22 +72,6 @@
         }
         
     }
-
-    .copywrite {
-        font-size: 3rem;
-        text-align: center;
-        line-height: 5rem;
-
-        @media @tablet {
-            font-size: 2.5rem;
-            line-height: 4rem;
-        }
-
-        @media @mobile {
-            font-size: 1.4rem;
-            line-height: 2.3rem;
-        }
-
         p {
             color: white;
         }
