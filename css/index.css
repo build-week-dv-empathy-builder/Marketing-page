@@ -744,6 +744,11 @@ html main {
   margin-bottom: 10rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .contact {
+    margin-bottom: 5rem;
+  }
+}
 .contact h1 {
   text-transform: uppercase;
   color: #fff;
@@ -809,7 +814,7 @@ html main {
 }
 @media (max-width: 500px) {
   .contact form textarea {
-    height: 30vh;
+    height: 20vh;
     padding: 0.333rem;
     line-height: 1rem;
     border: 1px solid #fff;
