@@ -345,7 +345,10 @@ html main {
 }
 .footer .copywrite .social-icons a {
   text-align: center;
-  cursor: help;
+  cursor: pointer;
+}
+.footer .copywrite .social-icons a:hover {
+  color: #f49293;
 }
 .footer .copywrite .social-icons .twitter {
   color: white;
@@ -362,6 +365,9 @@ html main {
 .footer .copywrite a {
   color: #262D35;
   text-decoration: none;
+}
+.footer .copywrite a:hover {
+  color: #f49293;
 }
 .home {
   width: 100%;
