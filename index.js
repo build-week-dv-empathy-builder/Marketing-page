@@ -2,6 +2,7 @@ const footer = document.querySelector('.footer');
 const windowLocation = window.location.pathname;
 const copy = document.querySelector('.copywrite');
 const team = document.querySelectorAll('.team');
+const home = document.querySelectorAll(".home-item");
 
 window.addEventListener('load', (event) => {
     console.log(team);
@@ -11,12 +12,21 @@ window.addEventListener('load', (event) => {
         team.forEach(function(el){
             console.log(el);
             el.style.display = "none";
-        })
+        });
+        home.forEach(function (item) {
+            console.log(item);
+            item.style.display = "block";
+        });
     }else{
+        // location home page
         team.forEach(function (el) {
             console.log(el);
             el.style.display = "block";
-        })
+        });
+        home.forEach(function (item) {
+            console.log(item);
+            item.style.display = "none";
+        });
     }
 });
 
