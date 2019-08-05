@@ -5,35 +5,39 @@ const team = document.querySelectorAll('.team');
 const home = document.querySelectorAll(".home-item");
 
 window.addEventListener('load', (event) => {
-    console.log(team);
-    console.log(windowLocation);
     if(windowLocation === "/about.html"){
         footer.style.backgroundImage = "url('./img/background-bottom.svg')";
         team.forEach(function(el){
-            console.log(el);
             el.style.display = "none";
         });
         home.forEach(function (item) {
-            console.log(item);
             item.style.display = "block";
         });
     }else{
         // location home page
         team.forEach(function (el) {
-            console.log(el);
             el.style.display = "block";
         });
         home.forEach(function (item) {
-            console.log(item);
             item.style.display = "none";
         });
     }
 });
 
 
-// let base = '/mi-brews';
-// // if on localhost during development base = slash
-// if (windowLocation.indexOf("localhost") > -1) {
-//     base = '/';
-// }
+
+// console.log(animated);
+window.addEventListener('scroll', function (e) {
+    // console.log(animated);
+    const animated = e.target.querySelectorAll(".animated");
+    if(animated.length !== 0){
+        setTimeout(function(){
+            animated.forEach(function (item) {
+                item.classList.remove("animated");
+            })
+        }, 3000);
+    }else if(animated.length === 0){
+        wow.init();
+    }
+});
 

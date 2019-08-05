@@ -146,10 +146,10 @@
           }
 
 
-            /// overlay hover
-            .overlay:hover, .overlay-wow {
+            /// overlay hover and wow animation
+            .overlay:hover, .animated {
               background-color: rgba(83, 195, 197, 0.75);
-              animation: BUTTON-ANIMATION 2.333s ease-in;
+              animation: BUTTON-ANIMATION 3s ease-in;
               display: block;
               .name {
                 display: block;
@@ -168,10 +168,7 @@
 
             .fab {
               max-width: 25%;
-              transition: all 1s ease-in;
               &:hover {
-                // color: #f49293;
-                // transform: scale(2) rotateY(180deg); 
                 animation: FAB-ANIMATION 2s ease-in;   
               }
             }
