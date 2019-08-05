@@ -757,30 +757,29 @@ html main {
   }
 }
 .profiles .row .image-container .over-flower .overlay:hover,
-.profiles .row .image-container .over-flower .overlay-wow {
+.profiles .row .image-container .over-flower .animated {
   background-color: rgba(83, 195, 197, 0.75);
-  animation: BUTTON-ANIMATION 2.333s ease-in;
+  animation: BUTTON-ANIMATION 3s ease-in;
   display: block;
 }
 .profiles .row .image-container .over-flower .overlay:hover .name,
-.profiles .row .image-container .over-flower .overlay-wow .name {
+.profiles .row .image-container .over-flower .animated .name {
   display: block;
   background: transparent;
   animation: NAME-ANIMATION 1.5s ease-in;
   margin-top: 25%;
 }
 .profiles .row .image-container .over-flower .overlay:hover p,
-.profiles .row .image-container .over-flower .overlay-wow p {
+.profiles .row .image-container .over-flower .animated p {
   display: block;
 }
 .profiles .row .image-container .over-flower .overlay:hover .fab,
-.profiles .row .image-container .over-flower .overlay-wow .fab {
+.profiles .row .image-container .over-flower .animated .fab {
   display: block;
   animation: FAB-ANIMATION 2s ease-in;
 }
 .profiles .row .image-container .over-flower .fab {
   max-width: 25%;
-  transition: all 1s ease-in;
 }
 .profiles .row .image-container .over-flower .fab:hover {
   animation: FAB-ANIMATION 2s ease-in;
