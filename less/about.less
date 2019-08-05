@@ -102,7 +102,24 @@
               background-size: cover;
             }
 
-            
+            // WOWJS animation////////////////////////
+            // .overlay-wow{
+            //   background-color: rgba(83, 195, 197, 0.75);
+            //   animation: BUTTON-ANIMATION 2s ease-in;
+            //   display: block;
+            //   .name {
+            //     display: block;
+            //     animation: NAME-ANIMATION 1s ease-in;
+            //     margin-top: 25%;
+            //   }
+            //   p{
+            //     display: block;
+            //   }
+            //   .fab {
+            //     display: block;
+            //   }
+            // }
+            /////////////////////////
 
             .overlay {
               font-size: 2rem;
@@ -130,13 +147,14 @@
 
 
             /// overlay hover
-            .overlay:hover {
+            .overlay:hover, .overlay-wow {
               background-color: rgba(83, 195, 197, 0.75);
-              animation: BUTTON-ANIMATION 4s ease-in;
+              animation: BUTTON-ANIMATION 2.333s ease-in;
               display: block;
               .name {
                 display: block;
-                animation: NAME-ANIMATION 1s ease-in;
+                background: transparent;
+                animation: NAME-ANIMATION 1.5s ease-in;
                 margin-top: 25%;
               }
               p{
@@ -144,6 +162,7 @@
               }
               .fab {
                 display: block;
+                animation: FAB-ANIMATION 2s ease-in;
               }
             }
 
@@ -151,8 +170,9 @@
               max-width: 25%;
               transition: all 1s ease-in;
               &:hover {
-                color: #f49293;
-                transform: scale(1.5) rotateY(180deg);    
+                // color: #f49293;
+                // transform: scale(2) rotateY(180deg); 
+                animation: FAB-ANIMATION 2s ease-in;   
               }
             }
         }

@@ -86,7 +86,7 @@
           <div class="image-container">
             <div class="over-flower">
               <div id="jesse" class="bot bg-image"></div>
-              <div class="bot overlay">
+              <div class="wow bot overlay" data-wow-delay="1s">
                 <h3 class="name">Jesse Tingle</h3>
                 <p>Web UI Developer</p>
                 <a class="fab fa-github-alt" target="_blank" href="https://github.com/Jesse-Tingle"></a>
@@ -97,7 +97,7 @@
           <div class="image-container">
             <div class="over-flower">
               <div id="robert" class="bot bg-image"></div>
-              <div class="bot overlay">
+              <div class="wow bot overlay" data-wow-delay="1s">
                 <h3 class="name">Robert Allen</h3>
                 <p>Web UI Developer</p>
                 <a class="fab fa-github-alt" target="_blank" href="https://github.com/bobbidigi"></a>
@@ -110,7 +110,7 @@
         <div class="image-container">
           <div class="over-flower">
             <div id="danielle" class="bot bg-image"></div>
-            <div class="bot overlay">
+            <div class="wow bot overlay" data-wow-delay="1s">
               <h3 class="name">Danielle Baxter</h3>
               <p>React Developer</p>
                <a class="fab fa-github-alt" target="_blank" href="https://github.com/danibaxx"></a>
@@ -121,7 +121,7 @@
         <div class="image-container">
           <div class="over-flower">
             <div id="travis" class="bot bg-image"></div>
-            <div class="bot overlay">
+            <div class="wow bot overlay" data-wow-delay="1s">
               <h3 class="name">Travis Little</h3>
               <p>React Developer</p>
                <a class="fab fa-github-alt" target="_blank" href="https://github.com/travislittle84"></a>
@@ -134,7 +134,7 @@
         <div class="image-container">
           <div class="over-flower">
             <div id="derrick" class="bot bg-image"></div>
-            <div class="bot overlay">
+            <div class="wow bot overlay" data-wow-delay="1s">
               <h3 class="name">Derrick Mei</h3>
               <p>Backend Stewart</p>
                <a class="fab fa-github-alt" target="_blank" href="https://github.com/Derrick-Mei"></a>
@@ -143,15 +143,8 @@
         </div>
       </div>
     </section>
-
-    <!-- ////bottom image -->
-    <!-- <img class="bottom-image" src="./img/background-bottom.svg" alt="background-image"> -->
-
-
-    <!-- //contact -->
     
-    
-
+    <!-- footer -->
     <section class="footer">
 
       <div class="copywrite">
@@ -187,6 +180,21 @@
   </main>
 
   <script src="./index.js"></script>
+  <!-- !WOW -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+  <script>
+    wow = new WOW(
+        {
+          boxClass: 'wow',      // default
+          animateClass: 'overlay-wow', // default
+          offset: 60,          // default
+          mobile: true,       // default
+          live: true        // default
+        }
+      )
+      wow.init();
+  </script>
 </body>
 
 </html>
