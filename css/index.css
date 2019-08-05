@@ -19,6 +19,15 @@
     margin-top: 25%;
   }
 }
+@keyframes FAB-ANIMATION {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #f49293;
+    transform: scale(2) rotateY(180deg);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -747,29 +756,34 @@ html main {
     font-size: calc(20px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   }
 }
-.profiles .row .image-container .over-flower .overlay:hover {
+.profiles .row .image-container .over-flower .overlay:hover,
+.profiles .row .image-container .over-flower .overlay-wow {
   background-color: rgba(83, 195, 197, 0.75);
-  animation: BUTTON-ANIMATION 4s ease-in;
+  animation: BUTTON-ANIMATION 2.333s ease-in;
   display: block;
 }
-.profiles .row .image-container .over-flower .overlay:hover .name {
+.profiles .row .image-container .over-flower .overlay:hover .name,
+.profiles .row .image-container .over-flower .overlay-wow .name {
   display: block;
-  animation: NAME-ANIMATION 1s ease-in;
+  background: transparent;
+  animation: NAME-ANIMATION 1.5s ease-in;
   margin-top: 25%;
 }
-.profiles .row .image-container .over-flower .overlay:hover p {
+.profiles .row .image-container .over-flower .overlay:hover p,
+.profiles .row .image-container .over-flower .overlay-wow p {
   display: block;
 }
-.profiles .row .image-container .over-flower .overlay:hover .fab {
+.profiles .row .image-container .over-flower .overlay:hover .fab,
+.profiles .row .image-container .over-flower .overlay-wow .fab {
   display: block;
+  animation: FAB-ANIMATION 2s ease-in;
 }
 .profiles .row .image-container .over-flower .fab {
   max-width: 25%;
   transition: all 1s ease-in;
 }
 .profiles .row .image-container .over-flower .fab:hover {
-  color: #f49293;
-  transform: scale(1.5) rotateY(180deg);
+  animation: FAB-ANIMATION 2s ease-in;
 }
 .bottom-image {
   width: 100%;
