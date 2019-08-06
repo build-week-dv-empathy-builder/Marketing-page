@@ -194,6 +194,20 @@
         }
       )
       wow.init();
+      // console.log(animated);
+        window.addEventListener('scroll', function (e) {
+          // console.log(animated);
+          const animated = e.target.querySelectorAll(".animated");
+          if (animated.length !== 0) {
+            setTimeout(function () {
+              animated.forEach(function (item) {
+                item.classList.remove("animated");
+              })
+            }, 3000);
+          } else if (animated.length === 0) {
+            wow.init();
+          }
+        });
   </script>
 </body>
 
